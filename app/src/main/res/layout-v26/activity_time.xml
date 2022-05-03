@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:paddingStart="10sp"
         android:paddingLeft="10sp"
-        android:paddingRight="10sp"
         android:text="SAMPLE"
         android:textColor="#1B5E20"
         android:textColorHighlight="#E6EE9C"

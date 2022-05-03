@@ -14,7 +14,7 @@ import java.util.Random;
 
 public class Time extends AppCompatActivity {
 
-       private static  String st;
+    private static  String st;
     private static final Random Rndm = new Random();
 
     @Override
@@ -26,9 +26,7 @@ public class Time extends AppCompatActivity {
             String[] toastMessages = new String[] {"Respire mejor con Vick's VAPORUB®", "Despierta tus gluteos!", "El Sol es Vitamina D","Investigue sobre su flora intestinal","Duerma 8 horas continuas","Avena","Tome Lala 100®"};
             int randomMsgIndex = Rndm.nextInt(toastMessages.length - 1);
             Toast.makeText(getApplicationContext(), toastMessages[randomMsgIndex], Toast.LENGTH_LONG).show();
-
         }
-
         st=getIntent().getExtras().getString("Value");
         TextView r1=(TextView) this.findViewById(R.id.textView4);
         switch(st)

@@ -9,23 +9,23 @@
 
     <Switch
         android:id="@+id/switchIso"
-        android:layout_width="192dp"
-        android:layout_height="94dp"
-        android:text="Isometria"
+        android:layout_width="228dp"
+        android:layout_height="128dp"
+        android:text="Isometria (galería)"
         android:textColor="#0005FF"
-        android:textSize="30sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintVertical_bias="0.758" />
 
     <Switch
         android:id="@+id/switchCardio"
         android:layout_width="192dp"
         android:layout_height="94dp"
-        android:text="Cardio"
+        android:text="Cardio (galería)"
         android:textColor="#0005FF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.57" />
 
     <TextView
         android:id="@+id/textView"
@@ -45,7 +45,7 @@
         android:textSize="46sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26" />

@@ -16,64 +16,165 @@
             android:orientation="vertical" >
 
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalBench"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/bench" />
 
+            <TextView
+                android:id="@+id/txtBench"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="↑Determine su posición relativa a la barra descolgando y realizando el movimiento sin peso. Determine la separación de sus manos descansando la barra en su pecho y ajustando a discreción, el objetivo es no estresar las muñecas. Nunca realice el movimiento solo o sin topes de seguridad. Arquee un poco la espalda." />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalCalve"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/calfraise" />
 
+            <TextView
+                android:id="@+id/txtCalve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respete el recorrido completo, reemplace el la maquinaria a discreción. " />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalChin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/chinup" />
 
+            <TextView
+                android:id="@+id/txtChinup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Separe las manos a la anchura de los hombros, eleve hasta rebazar la barbilla y tocar con el cuello. Doble las piernas como la ilustración, mantenga estomago tenso. (Este es un ejercicio de brazos y abdomen)." />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalDiddy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/diddy" />
 
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Respete la forma de la ilustración. Explote al levantar y deje colapsar la barra al terminar la subida." />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalKick"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/kick" />
 
+            <TextView
+                android:id="@+id/txtKick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estire lentamente, mantenga tensión en el estomago. " />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalLat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/latpulldown" />
 
+            <TextView
+                android:id="@+id/txtDomi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version facil del Pullup." />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalOhp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ohp" />
 
+            <TextView
+                android:id="@+id/txtOhp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mantenga los antebrazos completamente verticales perpendiculares y debajo de la barra, inhale antes de subir y exhale con la barra elevada, inhale de nuevo y exhale al bajar a los hombros. El viaje empieza y termina a la mitad de la longitud de los pies. " />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalpull"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/pullover" />
 
+            <TextView
+                android:id="@+id/txtPullover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='Utilice la "barra EZ' />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalSide"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/sideraise" />
 
+            <TextView
+                android:id="@+id/txtSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Separe los pies a la anchura de los hombros. Levante lentamente, doble ligeramente los codos. La mitad trasera de la mancuerna se eleva un poco mas. Procure usar la versión con cables crossover." />
+
             <ImageView
+                android:adjustViewBounds="true"
                 android:id="@+id/imageViewGalSquat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/squat" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Los talones alineados a los hombros, los pies apuntan un poco hacia afuera, la vista se enfoca en el piso 2 a 3 metros enfrente, es importante no colapsar sino bajar a una velocidad igual en caderas y hombros. Utilice alguna plataforma en los talones a manera de tacón. Inhale antes de bajar exhale al regresar. Mantenga el abdomen compacto y estable." />
+
+            <ImageView
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:id="@+id/imgPlank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/plank" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/textPlank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprima el estomago y gluteos, mantenga la posición  a al fallo." />
+
+            <ImageView
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:id="@+id/imgAirbike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/airbike" />
+
+            <ImageView
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:id="@+id/imgElli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/eliptica" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Galeria extends AppCompatActivity {
 
@@ -20,8 +22,10 @@ public class Galeria extends AppCompatActivity {
     ImageView iVGPull ;
     ImageView iVGSide ;
     ImageView iVGSquat ;
-
-
+    ImageView iVGPlank ;
+    ImageView iVGAir ;
+    ImageView iVGEllie ;
+    TextView txtPlank;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +40,21 @@ public class Galeria extends AppCompatActivity {
         iVGPull=findViewById(R.id.imageViewGalpull);
         iVGSide=findViewById(R.id.imageViewGalSide);
         iVGSquat=findViewById(R.id.imageViewGalSquat);
+        if (!opcionesPicker.swC){
+            iVGAir=findViewById(R.id.imgAirbike);
+            iVGEllie=findViewById(R.id.imgElli);
 
+            iVGEllie.setVisibility(View.GONE);
+            iVGAir.setVisibility(View.GONE);
 
+        }
 
+        if (!opcionesPicker.swI){
+            iVGPlank=findViewById(R.id.imgPlank);
+            txtPlank=findViewById(R.id.textPlank);
+            iVGPlank.setVisibility(View.GONE);
+            txtPlank.setVisibility(View.GONE);
+        }
 
 
 

@@ -19,7 +19,7 @@ public class nuevaPicker extends AppCompatActivity {
     CheckedTextView checkedTextView7;
     Button mButtonOk;
     String st;
-    public   int total=0;
+    public  int total;
     String[] dias = new String[]{"yyyyy","","","","","",""};
 
     @Override
@@ -34,8 +34,9 @@ public class nuevaPicker extends AppCompatActivity {
         checkedTextView6= (CheckedTextView)findViewById(R.id.checkedTextView6);
         checkedTextView7= (CheckedTextView)findViewById(R.id.checkedTextView7);
         mButtonOk=(Button)findViewById(R.id.buttonOk);
-        //TextView textView2=(TextView) this.findViewById(R.id.textView2);
-        TextView textView3= this.findViewById(R.id.textView3);
+        mButtonOk.setEnabled(false);
+         TextView textView3= this.findViewById(R.id.textView3);
+         textView3.setVisibility(TextView.INVISIBLE);
         checkedTextView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -172,6 +173,9 @@ public class nuevaPicker extends AppCompatActivity {
             }
         });
 
+
+
+
         mButtonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -188,7 +192,7 @@ public class nuevaPicker extends AppCompatActivity {
     private void increase() {
        TextView textView3=this.findViewById(R.id.textView3);
         total++;
-        textView3.setText(String.valueOf(total));
+       // textView3.setText(String.valueOf(total));
         int x = total;
         switch (x) {
             case 1:
@@ -216,7 +220,11 @@ public class nuevaPicker extends AppCompatActivity {
             default:     textView3.setText(" ");
         }
 
+        if (total!=0){
+            mButtonOk.setEnabled(true);
 
+        }
+        else{ mButtonOk.setEnabled(false);}
 
 
     }
@@ -226,9 +234,13 @@ public class nuevaPicker extends AppCompatActivity {
 
         TextView textView3=(TextView) this.findViewById(R.id.textView3);
         total--;
-        textView3.setText(String.valueOf(total));
+        //textView3.setText(String.valueOf(total));
         int x = total;
+        if (total!=0){
+            mButtonOk.setEnabled(true);
 
+        }
+        else{ mButtonOk.setEnabled(false);}
         switch (x) {
             case 1:
                 textView3.setText("Fullbody");
@@ -259,11 +271,9 @@ public class nuevaPicker extends AppCompatActivity {
     public  void printarray(){
         TextView textView2=(TextView) this.findViewById(R.id.textView3);
         StringBuilder builder = new StringBuilder();
-        for (String s : dias){
+        for (String s : dias) {
             builder.append(s).append("\n");
-            textView2.setText(builder.toString()); } }
-
-
-
+            textView2.setText(builder.toString()); }
+    }
 
     }
