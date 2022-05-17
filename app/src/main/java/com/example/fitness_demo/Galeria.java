@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Galeria extends AppCompatActivity {
-
     ImageView iVGBench ;
     ImageView iVGCalve ;
     ImageView iVGChin ;
@@ -43,12 +42,9 @@ public class Galeria extends AppCompatActivity {
         if (!opcionesPicker.swC){
             iVGAir=findViewById(R.id.imgAirbike);
             iVGEllie=findViewById(R.id.imgElli);
-
             iVGEllie.setVisibility(View.GONE);
             iVGAir.setVisibility(View.GONE);
-
         }
-
         if (!opcionesPicker.swI){
             iVGPlank=findViewById(R.id.imgPlank);
             txtPlank=findViewById(R.id.textPlank);

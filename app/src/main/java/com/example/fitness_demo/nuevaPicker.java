@@ -173,9 +173,6 @@ public class nuevaPicker extends AppCompatActivity {
             }
         });
 
-
-
-
         mButtonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -268,12 +265,5 @@ public class nuevaPicker extends AppCompatActivity {
         }
 
     }
-    public  void printarray(){
-        TextView textView2=(TextView) this.findViewById(R.id.textView3);
-        StringBuilder builder = new StringBuilder();
-        for (String s : dias) {
-            builder.append(s).append("\n");
-            textView2.setText(builder.toString()); }
-    }
 
-    }
+}

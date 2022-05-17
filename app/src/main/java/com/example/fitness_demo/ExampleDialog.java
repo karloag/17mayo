@@ -20,7 +20,6 @@ public class ExampleDialog extends AppCompatDialogFragment {
         bildr.setPositiveButton("Acepto", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
             // se cierra solo
             }
         });
